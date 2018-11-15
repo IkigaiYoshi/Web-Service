@@ -38,7 +38,7 @@ Installation example for Ubuntu:
 
 It is necessary before starting the application to change the file *application.properties* located in:
 
->/webservice/src/main/resources/application.properties
+>/src/main/resources/application.properties
 
 Add username and password of your database user.
 
@@ -101,6 +101,6 @@ After starting the service, to see the result go to the link [http://localhost:8
  
  - [API Яндекс.Погоды](https://tech.yandex.ru/weather/) - API determination of temperature
  
- - [MySQL](https://www.mysql.com/) - 
+ - [MySQL](https://www.mysql.com/) - Relational database management system.
 
 
