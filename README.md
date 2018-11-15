@@ -80,12 +80,14 @@ After the first start it is necessary to comment back.
 
 The web-service is launched by a file *ServiceWeatherDemoApp.java* located in
 
->/webservice/src/main/java/com/siemens/ServiceWeatherDemoApp.java
+>/src/main/java/com/siemens/ServiceWeatherDemoApp.java
 
 
 The sensor starts the file *Sensore.java* located in 
 
-> /webservice/src/main/java/com/siemens/sensor/Sensore.java
+> /src/main/java/com/siemens/sensor/Sensore.java
+
+After starting the service, to see the result go to the link [http://localhost:8080/]().
 
 ## Built With
 
@@ -99,5 +101,6 @@ The sensor starts the file *Sensore.java* located in
  
  - [API Яндекс.Погоды](https://tech.yandex.ru/weather/) - API determination of temperature
  
+ - [MySQL](https://www.mysql.com/) - 
 
 

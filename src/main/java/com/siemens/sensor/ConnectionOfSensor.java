@@ -11,10 +11,10 @@ import java.util.logging.Logger;
 import org.json.JSONObject;
 
 
-public class ConnectionOfSensore {
+public class ConnectionOfSensor {
 
 
-    ConnectionOfSensore() {
+    ConnectionOfSensor() {
 
     }
 

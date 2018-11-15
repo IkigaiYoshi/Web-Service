@@ -10,10 +10,12 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 import java.util.List;
+
 /**
  * REST controller for {@link SensorWeatherData} connected requests.
  *
  */
+
 @RestController
 @RequestMapping("/")
 public class SensorWeatherRestController {

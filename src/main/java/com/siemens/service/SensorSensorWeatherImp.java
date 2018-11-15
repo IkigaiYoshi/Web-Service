@@ -8,6 +8,11 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+/**
+ * Service for {@link SensorWeatherRep} connected.
+ *
+ */
+
 @Slf4j
 @Service
 public class SensorSensorWeatherImp implements SensorWeatherService {
