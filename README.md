@@ -20,7 +20,7 @@ Optional:
    
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 ### Prerequisites
 
@@ -83,9 +83,9 @@ The web-service is launched by a file *ServiceWeatherDemoApp.java* located in
 >/src/main/java/com/siemens/ServiceWeatherDemoApp.java
 
 
-The sensor starts the file *Sensore.java* located in 
+The sensor starts the file *Sensor.java* located in 
 
-> /src/main/java/com/siemens/sensor/Sensore.java
+> /src/main/java/com/siemens/sensor/Sensor.java
 
 After starting the service, to see the result go to the link [http://localhost:8080/]().
 
