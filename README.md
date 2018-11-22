@@ -101,6 +101,10 @@ After starting the service, to see the result go to the link [http://localhost:8
  
  - [API Яндекс.Погоды](https://tech.yandex.ru/weather/) - API determination of temperature
  
+<<<<<<< HEAD
  - [MySQL](https://www.mysql.com/) -  Relational database management system
+=======
+ - [MySQL](https://www.mysql.com/) - Relational database management system.
+>>>>>>> 1ab1bcd31c83d1bad0242c6a9f7b40f394893494
 
 
