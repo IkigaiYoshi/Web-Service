@@ -40,7 +40,7 @@ public class SensorWeatherRestController {
         if (sensorWeatherData == null) {
             return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
         }
-        else if(Integer.parseInt(sensorWeatherData.getTemperature()) < -40 || Integer.parseInt(sensorWeatherData.getTemperature()) > 40){
+        else if(Integer.parseInt(sensorWeatherData.getTemperature()) < -100 || Integer.parseInt(sensorWeatherData.getTemperature()) > 100){
             return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
         }
         else if(!sensorWeatherData.getCoordinate().matches(formatCoordinate)){

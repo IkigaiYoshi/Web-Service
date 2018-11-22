@@ -20,11 +20,11 @@ Optional:
    
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 ### Prerequisites
 
-To start, you need a instaled MySQl server and an installed driver.
+To start, you need a installed MySQl server and an installed driver.
 
 Installation example for Ubuntu:
 
@@ -38,7 +38,7 @@ Installation example for Ubuntu:
 
 It is necessary before starting the application to change the file *application.properties* located in:
 
->/webservice/src/main/resources/application.properties
+>/src/main/resources/application.properties
 
 Add username and password of your database user.
 
@@ -83,9 +83,9 @@ The web-service is launched by a file *ServiceWeatherDemoApp.java* located in
 >/src/main/java/com/siemens/ServiceWeatherDemoApp.java
 
 
-The sensor starts the file *Sensore.java* located in 
+The sensor starts the file *Sensor.java* located in 
 
-> /src/main/java/com/siemens/sensor/Sensore.java
+> /src/main/java/com/siemens/sensor/Sensor.java
 
 After starting the service, to see the result go to the link [http://localhost:8080/]().
 
@@ -101,6 +101,6 @@ After starting the service, to see the result go to the link [http://localhost:8
  
  - [API Яндекс.Погоды](https://tech.yandex.ru/weather/) - API determination of temperature
  
- - [MySQL](https://www.mysql.com/) - 
+ - [MySQL](https://www.mysql.com/) -  Relational database management system
 
 

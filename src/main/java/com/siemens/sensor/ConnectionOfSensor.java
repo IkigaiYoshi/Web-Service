@@ -8,8 +8,9 @@ import java.util.Map;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import org.json.JSONObject;
 
+import org.json.JSONException;
+import org.json.JSONObject;
 
 public class ConnectionOfSensor {
 
@@ -18,19 +19,19 @@ public class ConnectionOfSensor {
 
     }
 
-    public Map getCoordinate() {
+    public Map getCoordinate() throws JSONException {
         String addressCoordinateAPI = "http://api.sypexgeo.net/";
         String str = getJSON(addressCoordinateAPI, "Accept-Charset", "UTF-8", 10000);
         JSONObject json = new JSONObject(str);
-        JSONObject jsonObject = (JSONObject) json.get("region");
+        JSONObject jsonObject = (JSONObject) json.get("city");
         Map coordinate = new HashMap<String, String>();
-        coordinate.put("lat", jsonObject.get("lat").toString());
-        coordinate.put("lon", jsonObject.get("lon").toString());
+        coordinate.put("lat", jsonObject.getString("lat"));
+        coordinate.put("lon", jsonObject.getString("lon"));
         return coordinate;
     }
 
 
-    public String getTemperature(String lat, String lon) {
+    public String getTemperature(String lat, String lon) throws JSONException {
         String addressWeatherAPI = "https://api.weather.yandex.ru/v1/forecast";
         String str = getJSON(addressWeatherAPI + "?lat=" + lat + "&lon=" + lon, "X-Yandex-API-Key", "0ca30491-c43d-47e2-92f2-5ca87927cbd8", 10000);
         JSONObject json = new JSONObject(str);
@@ -80,7 +81,7 @@ public class ConnectionOfSensor {
         return null;
     }
 
-    private JSONObject setJSON(String temperature, String lat, String lon) {
+    private JSONObject setJSON(String temperature, String lat, String lon) throws JSONException {
         JSONObject postJson = new JSONObject();
         postJson.put("coordinate", lat + ":" + lon);
         postJson.put("temperature", temperature);
@@ -105,7 +106,7 @@ public class ConnectionOfSensor {
             wr.close();
             connection.connect();
             connection.getResponseCode();
-        } catch (IOException e) {
+        } catch (IOException | JSONException e) {
             e.printStackTrace();
         }
 
